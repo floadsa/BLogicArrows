@@ -1,0 +1,8 @@
+#!/bin/bash
+
+PROJECT="bla"
+SRC="../src/"
+INCLUDE="../include/"
+
+#echo ${SRC}*.cpp
+g++ ${SRC}*.cpp glad.o -I"${INCLUDE}" -o "${PROJECT}" -lglfw
