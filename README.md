@@ -46,6 +46,12 @@ git clone https://github.com/floadsa/BLogicArrows.git
 cd BLogicArrows
 cd build
 
+#Install the GLFW GLM and glad first
+#To build this project you should create symbolic links to GLM and GLAD:
+ln -s /usr/include/glm BLogicArrows/include/glm
+ln -s /usr/include/glad BLogicArrows/include/glad
+#You can set your own path to this libraries
+
 ./make
 
 # you can adjust compilation options inside this file
