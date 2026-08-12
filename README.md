@@ -64,6 +64,8 @@ cd build
 - Backspace - delete selection
 - V - past selection
 - Z - undo
+- < > - adjusting delay between ticks(default 100 ms)
+- Space - stop simulation
 - Ctrl+S - save file
 
 ### Plans
