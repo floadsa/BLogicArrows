@@ -4,4 +4,4 @@ PROJECT="bla"
 SRC="../src/"
 INCLUDE="../include/"
 
-g++ ${SRC}*.cpp glad.o -I"${INCLUDE}" -O2 -o "${PROJECT}" -lglfw
+g++ ${SRC}*.cpp glad.o -I"${INCLUDE}" -Ofast -o "${PROJECT}" -lglfw

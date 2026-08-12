@@ -907,9 +907,15 @@ void Camera::CheckButtonArrows(double xpos, double ypos)
 	if(y_index == chunks[x_index].size() || chunks[x_index][y_index]->y != ChunkY)
 		return;
 	uint8_t type = chunks[x_index][y_index]->type[abs(tileY%16) * 16 + abs(tileX%16)];
-	if(type == 21 || type == 24)
+	uint8_t pos = (abs(tileY%16) * 16 + abs(tileX%16));
+	if(type == 24)
 	{
-		chunks[x_index][y_index]->next_state[abs(tileY%16) * 16 + abs(tileX%16)]++;
+		chunks[x_index][y_index]->next_state[pos]++;
+		chunks[x_index][y_index]->next_dirt = true;
+	}
+	if(type == 21)
+	{
+		chunks[x_index][y_index]->special_state[pos/8] |= (1 << (7-pos%8));
 		chunks[x_index][y_index]->next_dirt = true;
 	}
 }

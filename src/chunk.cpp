@@ -327,13 +327,13 @@ inline bool Chunk::IsActive(uint8_t neighbour_index, uint8_t type, uint8_t pos)
 			case 12:
 			case 13:
 			case 14:
-			case 21:
 			case 24:
 			case 25:
 				if(chunk->current_state[pos] > 0)
 					return 1;
 			break;
 			case 5:
+			case 21:
 				if(((chunk->current_special_state[pos/8] >> (7-pos%8)) & 1))
 					return 1;
 			break;
