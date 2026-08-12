@@ -1,0 +1,18 @@
+#!/bin/bash
+#I compiled this game for Windows like this:
+
+x86_64-w64-mingw32-g++ \
+	../src/*.cpp \
+    glad.o \
+	-I../include/glm \
+	-I../include \
+	-I/home/bruncell/glfw/include \
+	-L/home/bruncell/glfw/build-win/src \
+	-O3 \
+	-static-libgcc \
+	-static-libstdc++ \
+	-o bla.exe \
+	-lglfw3 \
+	-lopengl32 \
+	-lgdi32
+

@@ -230,8 +230,8 @@ int InitGraphics(Camera* camera)
 	chunk_shaderProgram = CreateShaderProgram(VxShader, FgShader);	
 	net_shaderProgram = CreateShaderProgram(NetVxShader, NetFgShader);	
 	brush_shaderProgram = CreateShaderProgram(BrushVxShader, BrushFgShader);	
-	arrows_texture = CreateTexture("textures/i.png");
-	selection_texture = CreateTexture("textures/selection.png");
+	arrows_texture = CreateTexture("../textures/i.png");
+	selection_texture = CreateTexture("../textures/selection.png");
 
 	chunk_texLoc = glGetUniformLocation(chunk_shaderProgram, "tex");
 	chunk_orthoLoc = glGetUniformLocation(chunk_shaderProgram, "ortho");
