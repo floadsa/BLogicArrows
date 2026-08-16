@@ -1,12 +1,12 @@
 ## BLogicArrows
 
-BlogicArrows - is an offline open-source parody of the [Logic Arrows](https://logic-arrows.io)
+BLogicArrows - is an offline open-source parody of the [Logic Arrows](https://logic-arrows.io)
 
 The project was created primarily because I personally wanted an offline and comfortable version
 of this game. I also wanted to give people who are interested in adding something new or
 experimenting with the game an opportunity to work with an open-source version
 
-This was written this using C++ and OpenGL with the aim to improve the performance of original
+It was written using C++ and OpenGL with the aim to improve the performance of original
 version, i didn't use any special ways to make this completely blazingly fast but at least it turned
 out quite fast version
 
@@ -55,7 +55,7 @@ ln -s /usr/include/glad BLogicArrows/include/glad
 ./make
 
 # you can adjust compilation options inside this file
-# for example -O0 for debug or set -O3 for the fastest perfomance
+# for example -O0 for debug or set -O3 for the fastest performance
 ```
 ### Controls
 
