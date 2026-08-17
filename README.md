@@ -62,6 +62,9 @@ ln -s /usr/include/glad BLogicArrows/include/glad
 - Middle mouse button - camera movement
 - Left mouse button - apply a brush
 - W A S D - rotates the brush
+- from 1 to 5 choose type
+- + and - for changing page of types
+- ` clear brush
 - R - eraser
 - Q - dropper
 - E - selection
